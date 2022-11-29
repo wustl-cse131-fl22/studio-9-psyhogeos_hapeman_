@@ -19,9 +19,23 @@ public class NameToHeight {
 	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-
-		// FIXME
-		throw new NotYetImplementedException();
-
+		
+		Map<String, Integer> chart = new HashMap<>();
+		chart.put("Nathan", 72);
+		chart.put("Mary", 60);
+		chart.put("Lawrence", 69);
+		
+		System.out.println("Whose height would you like to know? Type 'quit' to quit");
+		String name = in.next();
+		while(!name.equals("quit")) {
+			if(name.equals("Nathan") || name.equals("Mary") || name.equals("Lawrence")) {
+				System.out.println(name + " is " + chart.get(name) + " inches tall");
+			} else {
+				System.out.println("You're stupid, that's not one of the options");
+			}
+			System.out.println("Whose height would you like to know? Type 'quit' to quit");
+			name = in.next();
+		}
+		System.out.println("Successfully quit");
 	}
 }
