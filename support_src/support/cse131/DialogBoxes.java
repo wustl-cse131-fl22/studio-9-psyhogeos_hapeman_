@@ -4,7 +4,7 @@ import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 
 /**
- * @author Dennis Cosgrove (http://www.cse.wustl.edu/~cosgroved/)
+ * @author Dennis Cosgrove (http://www.cse.wustl.edu/~cosgroved/) hehe
  */
 public class DialogBoxes {
 	public static boolean askUser(Object message) {
